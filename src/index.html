@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/public/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://pbs.twimg.com/profile_images/1652719740366757891/j5Kg1ilW_400x400.jpg"
+    />
+    <script src="script.js" defer></script>
+  </head>
+  <body class="font-sfPro font-regular text-primary-200">
+    <header
+      class="relative z-[999999999] w-full min-h-[75vh] bg-white overflow-hidden"
+    >
+      <nav
+        class="fixed z-[999999] top-[1rem] w-full bg-transparent flex justify-between items-center px-8 transition-all"
+        id="nav"
+      >
+        <a
+          href="https://twitter.com/armandev10"
+          class="p-4 shadow-2xl rounded-full cursor-pointer"
+          id="blob"
+        >
+          <img
+            src="https://pbs.twimg.com/profile_images/1652719740366757891/j5Kg1ilW_400x400.jpg"
+            alt="@armandev10"
+            class="rounded-full w-10 h-10"
+          />
+        </a>
+        <ul
+          class="lists_1 flex gap-12 text-primary-200 max-md:hidden xl:text-lg"
+          id="lists"
+        >
+          <a href="#work"><li class="list hover_glow">Work</li></a>
+          <a href="#contact"><li class="list hover_glow">Contact</li></a>
+        </ul>
+        <div class="menu_box shadow-2xl hidden max-md:block rounded-full">
+          <button class="menu_btn rounded-full bg-white shadow-xl z-[99999]">
+            <div class="ham_bx">
+              <div class="ham_bx_inn"></div>
+            </div>
+          </button>
+          <div class="menu_section absolute">
+            <div class="menu_inn block max-md:hidden">
+              <ul
+                class="lists_2 flex flex-col gap-4 items-center justify-center text-primary-200 w-full xl:text-lg"
+                id="lists"
+              >
+                <a href="#work"><li class="list hover_glow">Work</li></a>
+                <a href="#contact"><li class="list hover_glow">Contact</li></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div
+        id="center_section"
+        class="absolute -z-1 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 text-center flex flex-col gap-6"
+      >
+        <h1 id="myName">Hello, world!, I'm Arman.</h1>
+        <div class="flex items-center justify-center gap-3">
+          <div class="globe">
+            <div class="globe-wrap">
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle-hor"></div>
+              <div class="circle-middle"></div>
+            </div>
+          </div>
+          <div class="text-primary-300 xl:text-xl">Located in Armenia</div>
+        </div>
+        <p class="text-primary-300 xl:text-xl">
+          I'm a self-taught Web developer, always on the lookout for new bugs to
+          debug, passionate about bringing code to life and creating exceptional
+          user experiences that leave a lasting impression.
+        </p>
+      </div>
+    </header>
+
+    <div
+      id="work"
+      class="flex flex-col justify-center items-center gap-12 overflow-hidden py-5"
+    >
+      <a
+        href="https://kidpreneurs.uteach.am/"
+        class="group w-4/5 max-w-4xl max-xl:h-[450px] max-md:h-auto overflow-hidden rounded-3xl"
+      >
+        <div
+          class="group-hover:bg-white transition-all bg-primary-400 rounded-3xl relative h-full overflow-hidden p-10"
+        >
+          <div class="bg-primary-200 w-14 h-14 p-3 rounded-lg">
+            <img
+              src="https://em-content.zobj.net/thumbs/160/apple/285/man-technologist_1f468-200d-1f4bb.png"
+              alt=""
+            />
+          </div>
+          <h2
+            class="work_place text-5xl font-medium my-5 tracking-normal bg-primary-200"
+          >
+            Kidpreneurs school
+          </h2>
+          <p class="text-primary-300">
+            <span class="uppercase">Web developer</span>
+            <span class="text-gray-600 px-3">•</span> 2023 - current
+          </p>
+          <ul
+            class="test flex flex-col gap-2 my-5 xl:text-lg text-primary-300 overflow-hidden"
+          >
+            <li>• Updating and making changes to the website</li>
+            <li>• Editing and formatting the website's content</li>
+            <li>• Adding new pages, sections, graphics to the website</li>
+            <li>
+              • Removing or archiving old or outdated content from the website
+            </li>
+            <li>
+              • Ensuring that the website's content is accurate, authentic
+            </li>
+            <li>etc..</li>
+          </ul>
+        </div>
+      </a>
+
+      <a
+        href="https://armandev10.gumroad.com/l/JavaScriptCrashCourse2023"
+        class="group w-4/5 max-w-4xl lg:h-[450px] rounded-3xl"
+      >
+        <div
+          class="group-hover:bg-white transition-all bg-primary-400 rounded-3xl max-lg:pb-0 relative overflow-hidden h-full flex max-lg:flex-col"
+        >
+          <div class="p-10 max-lg:pb-0 min-w-[50%]">
+            <div class="bg-primary-200 w-14 h-14 p-3 rounded-lg">
+              <img
+                src="https://em-content.zobj.net/thumbs/160/apple/81/memo_1f4dd.png"
+                alt=""
+              />
+            </div>
+            <h2 class="work_place text-5xl font-medium my-5 tracking-normal">
+              JavaScript Crash Course (2023)
+            </h2>
+            <p class="text-primary-300">
+              <span class="uppercase">My written course</span>
+              <span class="text-gray-600 px-3">•</span> 2023
+              <span>
+                <div class="my-5 flex items-center gap-2 w-full">
+                  <p>4.8</p>
+                  <ul class="flex">
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#FDC312"
+                        fill="#FDC312"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icon-tabler-star"
+                      >
+                        <path
+                          stroke="none"
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        ></path>
+                        <path
+                          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                        ></path>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#FDC312"
+                        fill="#FDC312"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icon-tabler-star"
+                      >
+                        <path
+                          stroke="none"
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        ></path>
+                        <path
+                          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                        ></path>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#FDC312"
+                        fill="#FDC312"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icon-tabler-star"
+                      >
+                        <path
+                          stroke="none"
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        ></path>
+                        <path
+                          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                        ></path>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#FDC312"
+                        fill="#FDC312"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icon-tabler-star"
+                      >
+                        <path
+                          stroke="none"
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        ></path>
+                        <path
+                          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                        ></path>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="#FDC312"
+                        fill="#FDC312"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="icon icon-tabler icon-tabler-star"
+                      >
+                        <path
+                          stroke="none"
+                          d="M0 0h24v24H0z"
+                          fill="none"
+                        ></path>
+                        <path
+                          d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"
+                        ></path>
+                      </svg>
+                    </li>
+                  </ul>
+                  <p>(10+ ratings)</p>
+                </div>
+              </span>
+            </p>
+          </div>
+          <img
+            src="images/Frame 101.png"
+            alt="My JavaScript crash course course"
+            class="relative lg:-right-30 lg:min-w-[800px]"
+          />
+        </div>
+      </a>
+
+      <a
+        href="https://github.com/ArmanDev1010?tab=repositories"
+        class="group w-4/5 max-w-4xl h-[450px] rounded-3xl"
+      >
+        <div
+          class="group-hover:bg-white transition-all bg-primary-400 rounded-3xl max-lg:pb-0 relative overflow-hidden h-full flex max-lg:flex-col"
+        >
+          <div class="p-10 max-lg:pb-0 min-w-[50%]">
+            <div class="bg-primary-200 w-14 h-14 p-3 rounded-lg">
+              <img
+                src="https://cdn.shopify.com/s/files/1/1061/1924/products/Writing_Hand_Emoji_Icon_ios10_large.png?v=1571606092"
+                alt=""
+              />
+            </div>
+            <h2 class="work_place text-5xl font-medium my-5 tracking-normal">
+              My Projects
+            </h2>
+            <ul
+              class="test relative z-[10] flex flex-col gap-2 my-5 max-lg:mb-0 xl:text-lg text-primary-300"
+            >
+              <li>• Notion clone</li>
+              <li>• Kanban</li>
+              <li>• Todoist clone</li>
+              <li>• 50+ projects</li>
+            </ul>
+          </div>
+
+          <img
+            src="images/Frame q.png"
+            alt="My JavaScript crash course course"
+            class="relative lg:-right-0 lg:min-w-[800px] max-lg:hidden"
+          />
+          <img
+            src="images/Frame 9111.png"
+            alt="My JavaScript crash course course"
+            class="relative lg:-right-0 lg:min-w-[800px] lg:hidden"
+          />
+        </div>
+      </a>
+    </div>
+
+    <footer
+      id="contact"
+      class="contact bg-primary-200 text-white p-10 py-24 md:px-20 mt-20 relative"
+    >
+      <div class="contact_me pb-4 mb-4 relative flex flex-col">
+        <div class="flex items-center">
+          <a
+            href="https://twitter.com/armandev10"
+            class="p-2 pr-3 pl-0 shadow-2xl rounded-full cursor-pointer"
+          >
+            <img
+              src="https://pbs.twimg.com/profile_images/1652719740366757891/j5Kg1ilW_400x400.jpg"
+              alt="@armandev10"
+              class="rounded-full w-14 h-14"
+            />
+          </a>
+          <h2 class="my_Name">Let’s work</h2>
+        </div>
+        <h2 class="my_Name">together</h2>
+      </div>
+      <div class="flex justify-center items-center my-8">
+        <button
+          class="myMail relative py-5 px-10 border-2 border-primary-300 rounded-full overflow-hidden hover:text-primary-200"
+        >
+          <a href="mailto:arman.manukyan4.y@gmail.com" class="relative z-[99]"
+            >arman.manukyan4.y@gmail.com</a
+          >
+        </button>
+      </div>
+      <div class="">
+        <p class="text-primary-300">socials</p>
+        <ul class="flex gap-3 mt-4">
+          <li class="hover:scale-[1.08] transition-all">
+            <a href="https://twitter.com/armandev10"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-twitter"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"
+                /></svg
+            ></a>
+          </li>
+          <li class="hover:scale-[1.08] transition-all">
+            <a href="https://github.com/ArmanDev1010?tab=repositories"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-github"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#ffff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path
+                  d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"
+                /></svg
+            ></a>
+          </li>
+          <li class="hover:scale-[1.08] transition-all">
+            <a href="https://www.linkedin.com/in/arman-manukyan-77114b265/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-brand-linkedin"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="#fff"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <rect x="4" y="4" width="16" height="16" rx="2" />
+                <line x1="8" y1="11" x2="8" y2="16" />
+                <line x1="8" y1="8" x2="8" y2="8.01" />
+                <line x1="12" y1="16" x2="12" y2="11" />
+                <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p
+        class="text-primary-100 absolute bottom-4 left-0 text-center w-full max-sm:text-xs"
+      >
+        Copyright © 2023 Arman Manukyan. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>

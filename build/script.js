@@ -16,6 +16,7 @@ buttons.forEach((button) => {
 });
 
 menu_btn.addEventListener("click", menu_Click);
+menu_inn.addEventListener("click", menu_Close);
 
 ham_bx_inn.style.setProperty("--after_top", "-7px");
 ham_bx_inn.style.setProperty("--after_width", "20px");
@@ -30,6 +31,10 @@ function menu_Click() {
       set_off();
       break;
   }
+}
+
+function menu_Close() {
+  set_off();
 }
 
 function set_on() {
@@ -69,23 +74,23 @@ let lastScrollTop = 0;
 document.addEventListener("scroll", () => {
   let st = window.pageYOffset || document.documentElement.scrollTop;
   if (screenX > 768) {
-    if (st < lastScrollTop) {
+    if (st < lastScrollTop || st == 0) {
+      nav.classList.remove("down");
+      lists_1.classList.add("hide");
+      lists_2.classList.add("show");
+      menu_btn.parentElement.classList.add("show");
+    } else {
       nav.classList.add("down");
       lists_1.classList.remove("hide");
       lists_2.classList.remove("show");
       menu_btn.classList.remove("show");
       menu_btn.parentElement.classList.remove("show");
-    } else {
-      nav.classList.remove("down");
-      lists_1.classList.add("hide");
-      lists_2.classList.add("show");
-      menu_btn.parentElement.classList.add("show");
     }
   } else {
-    if (st > lastScrollTop) {
-      nav.classList.add("down");
-    } else {
+    if (st < lastScrollTop || st == 0) {
       nav.classList.remove("down");
+    } else {
+      nav.classList.add("down");
     }
   }
   lastScrollTop = st <= 0 ? 0 : st;

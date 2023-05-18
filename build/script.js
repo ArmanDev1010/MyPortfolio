@@ -86,6 +86,16 @@ document.addEventListener("scroll", () => {
       menu_btn.classList.remove("show");
       menu_btn.parentElement.classList.remove("show");
     }
+    if (st == 0) {
+      nav.classList.remove("down");
+      lists_1.classList.remove("hide");
+      lists_2.classList.add("hide");
+      menu_btn.parentElement.classList.add("hide");
+    } else {
+      lists_2.classList.remove("hide");
+      lists_2.classList.remove("show");
+      menu_btn.parentElement.classList.remove("hide");
+    }
   } else {
     if (st < lastScrollTop || st == 0) {
       nav.classList.remove("down");

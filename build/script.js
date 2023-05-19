@@ -74,7 +74,7 @@ let lastScrollTop = 0;
 document.addEventListener("scroll", () => {
   let st = window.pageYOffset || document.documentElement.scrollTop;
   if (screenX > 768) {
-    if (st < lastScrollTop || st == 0) {
+    if (st < lastScrollTop) {
       nav.classList.remove("down");
       lists_1.classList.add("hide");
       lists_2.classList.add("show");
@@ -87,14 +87,8 @@ document.addEventListener("scroll", () => {
       menu_btn.parentElement.classList.remove("show");
     }
     if (st == 0) {
-      nav.classList.remove("down");
+      menu_btn.parentElement.classList.remove("show");
       lists_1.classList.remove("hide");
-      lists_2.classList.add("hide");
-      menu_btn.parentElement.classList.add("hide");
-    } else {
-      lists_2.classList.remove("hide");
-      lists_2.classList.remove("show");
-      menu_btn.parentElement.classList.remove("hide");
     }
   } else {
     if (st < lastScrollTop || st == 0) {
